@@ -21,6 +21,10 @@ class Kele
     if !@auth_token
       raise "Email and/or password provided is not valid"
     end
+
+    @headers = {
+      "authorization" => @auth_token
+    }
   end
 
   def get_token
@@ -28,23 +32,13 @@ class Kele
   end
 
   def get_me
-    response = self.class.get("#{@bloc_api_url}users/me/", headers: {"authorization" => @auth_token})
+    response = self.class.get("#{@bloc_api_url}users/me/", headers: @headers)
     JSON.parse(response.body)
   end
 
   def get_mentor_availability
     mentor_id = get_me["current_enrollment"]["mentor_id"]
-    response = self.class.get("#{@bloc_api_url}mentors/#{mentor_id}/student_availability/", headers: {"authorization" => @auth_token})
+    response = self.class.get("#{@bloc_api_url}mentors/#{mentor_id}/student_availability/", headers: @headers)
     JSON.parse(response.body)
   end
-
-  # def get_roadmap(id)
-  #   response = self.class.get("#{@bloc_api_url}roadmaps/#{id}", headers: {"authorization" => @auth_token})
-  #   JSON.parse(response.body)
-  # end
-  #
-  # def get_checkpoint(id)
-  #   response = self.class.get("#{@bloc_api_url}checkpoints/#{id}", headers: {"authorization" => @auth_token})
-  #   JSON.parse(response.body)
-  # end
 end
