@@ -1,3 +1,5 @@
+# Replace values for `CORRECT_EMAIL` and `CORRECT_PASSWORD` with a valid user's
+# email and password.
 CORRECT_EMAIL: 'danjohnson@gmail.com'
 CORRECT_PASSWORD: 'realpassword'
 FAKE_EMAIL: 'jsmith@fake.com'
