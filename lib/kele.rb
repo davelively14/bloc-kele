@@ -13,8 +13,14 @@ class Kele
       }
     }
 
-    parsed_response = self.class.post("#{@bloc_api_url}sessions/", options)
-    
-    @auth_token = parsed_response["auth_token"]
+    @auth_token = self.class.post("#{@bloc_api_url}sessions/", options)["auth_token"]
+
+    if !@auth_token
+      raise "Email and/or password provided is not valid"
+    end
+  end
+
+  def get_token
+    @auth_token
   end
 end
