@@ -73,4 +73,12 @@ RSpec.describe Kele do
       expect(get_roadmap_results["short_name"]).to eq("Rails")
     end
   end
+
+  describe "get_checkpoint" do
+    let(:get_checkpoint_results) { good_kele_load.get_checkpoint(1606) }
+
+    it "returns a Ruby hash" do
+      expect(get_checkpoint_results).to be_a(Hash)
+    end
+  end
 end
