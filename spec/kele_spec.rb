@@ -61,4 +61,16 @@ RSpec.describe Kele do
       expect(keys.include?('booked')).to be_truthy
     end
   end
+
+  describe "get_roadmap" do
+    let(:get_roadmap_results) { good_kele_load.get_roadmap(31) }
+
+    it "returns a Ruby hash" do
+      expect(get_roadmap_results).to be_a(Hash)
+    end
+
+    it "returns the roadmap for Rails" do
+      expect(get_roadmap_results["short_name"]).to eq("Rails")
+    end
+  end
 end
