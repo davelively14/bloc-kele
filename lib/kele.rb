@@ -21,6 +21,6 @@ class Kele
   end
 
   def get_token
-    @auth_token
+    @auth_token.clone
   end
 end
