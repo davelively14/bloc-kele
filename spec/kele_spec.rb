@@ -43,4 +43,22 @@ RSpec.describe Kele do
       expect(get_me_results["email"]).to eq(ENV["CORRECT_EMAIL"])
     end
   end
+
+  describe "get_mentor_availability" do
+    let(:get_mentor_availability_results) { good_kele_load.get_mentor_availability }
+
+    it "returns a Ruby array" do
+      expect(get_mentor_availability_results).to be_a(Array)
+    end
+
+    it "returns correct information" do
+      keys = get_mentor_availability_results.first.keys
+
+      expect(keys.include?('id')).to be_truthy
+      expect(keys.include?('starts_at')).to be_truthy
+      expect(keys.include?('ends_at')).to be_truthy
+      expect(keys.include?('week_day')).to be_truthy
+      expect(keys.include?('booked')).to be_truthy
+    end
+  end
 end
