@@ -1,4 +1,5 @@
 require 'httparty'
+require 'json'
 
 class Kele
   include HTTParty
@@ -22,5 +23,10 @@ class Kele
 
   def get_token
     @auth_token.clone
+  end
+
+  def get_me
+    response = self.class.get("#{@bloc_api_url}users/me/", headers: {"authorization" => @auth_token})
+    JSON.parse(response.body)
   end
 end
