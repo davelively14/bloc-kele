@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions/
+    body:
+      encoding: UTF-8
+      string: email=davelively14%40gmail.com&password=0LDw00d1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 27 Feb 2017 00:42:40 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"5f5bf9a87f0d2f078c7959aced1ece00"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=0S8eWcpMc9lvQpUruYVCvIfITZpu6g7zhs6bLftMmp8%3D; path=/; secure
+      - _BlocAlpha_session2=QUtuNEN0bHhHQU1yUWhXNHB1Wmt5Vk9Kbm93S0ExSUJCQ1VqTVpaUzNVNGQ2c3ZZSjhuSjNzeTRrenN0TjVwejJSTzF1TEFsMExXMWtmeWNRNUdaV1gvRit4Vk55dldSY2JtWkJPMmtibWtwOEFVS20xVzI5SllVT25GOEVNWk1McXZ0dXZwUy8wU0hrdGR0LzJUQWRNRWljdEJPVTh1QWg2YjhPdmdram9Famd1UlRMeWpoRXBIWEc5TGtTRDZaWjhXbkFLaE92bzNRcEJlSGtGamNIQT09LS0wT1l4dVlsdWFuaFhNRkFqWjYra1VRPT0%3D--325e51e16019b8c794e6921b21f183430db432a7;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_visit=e0f77880-48d6-4d78-8934-bff73a8b42a0; path=/; expires=Mon, 27 Feb
+        2017 04:42:41 -0000; secure
+      - ahoy_visitor=f00cf9b9-97bf-4c19-adbb-7d68b94945f1; path=/; expires=Wed, 27
+        Feb 2019 00:42:41 -0000; secure
+      X-Request-Id:
+      - 1f0471b0-fec0-44bf-863a-ebd5e56b63cd
+      X-Runtime:
+      - '0.089985'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiZWU3N2I5NDVhNzdiNDBiMjk4YTY0ZDJhODhkMjVkZTUiLCJ1c2VyX2lkIjoyMzY3OTc4LCJuYW1lIjoiRGF2aWQgTGl2ZWx5In0.IrNbQlmM8HZW-8xc29xYAMqCMo62rWN2rsYoAVjsA7c","user":{"id":2367978,"email":"davelively14@gmail.com","created_at":"2016-12-20T05:32:11.739-08:00","updated_at":"2017-02-26T16:31:15.726-08:00","facebook_id":null,"first_name":"David","last_name":"Lively","role":"user","stripe_customer_id":"cus_9mMXh2CM1NGYBh","twitter_handle":"RealDaveLively","skype_handle":"davelively14","github_handle":"davelively14","time_zone":"Eastern
+        Time (US \u0026 Canada)","bio":null,"photo_file_name":"Headshot_-_2015_-_small.jpg","photo_content_type":"image/jpeg","photo_file_size":26489,"photo_updated_at":"2017-01-09T06:02:22.521-08:00","send_new_message_emails":true,"referred_by_id":null,"slug":"david-lively","os":"OS
+        X","last_seen_at":"2017-02-26T16:31:12.055-08:00","private_profile":false,"google_plus_id":null,"linkedin":"https://www.linkedin.com/in/livelydave","quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5700,"phone_num":"912-695-8927","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":null,"birthdate":"1979-09-02","gender":"Male","first_visit_id":null,"codewars_handle":"davelively14"}}'
+    http_version: 
+  recorded_at: Mon, 27 Feb 2017 00:42:41 GMT
+- request:
+    method: get
+    uri: https://www.bloc.io/api/v1/users/me/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiZWU3N2I5NDVhNzdiNDBiMjk4YTY0ZDJhODhkMjVkZTUiLCJ1c2VyX2lkIjoyMzY3OTc4LCJuYW1lIjoiRGF2aWQgTGl2ZWx5In0.IrNbQlmM8HZW-8xc29xYAMqCMo62rWN2rsYoAVjsA7c
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 27 Feb 2017 00:42:41 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"07d35c0d1289be47ef61e0d54f91977a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=RkZXMl%2FKdyHVpXA4ZyvvaSJ7UA8sRHk%2BTvbm7wZWkak%3D; path=/; secure
+      - _BlocAlpha_session2=c281N2JqWDR3Z0toVGdud2I5M0V3dmtCNVc1QnlUZFNqU1VFaUpSdWlYTDBaVkc0WUJ1Zlk1MEkwbGN5Wkt4RU9QaTlQUnFBakV2SjkzeDcyV2J3NkFCb1BlbjFqaFFVQVM4VForbmNVMjhPNDIxdXFDZmNvRmNQWHNucm5iUDhpSEErVmw3RHRyVVVLQmt5YlBFTGRMQWZvUWFnZXptbEhVVkVmV2Y1NC9YTGdkQVJwMU5zZXl3N293Si83eERYK2FSaUtGZXJTZ1VjdnQ1WTlmSU5WYmJhS0RPZkZVaERBK3ZML2hLL0s3c3dXbFVuOVpBMGZQWm83OG5zaGE1b2YyRHhQTWFhcE44U2dGUnNFOHo1a2FYYWx3cjhXaDNhYTMzNnFOK1BIbmQrQzNwTXVrbW5VZGpIT1Bha0tIQ3YtLWU0YlBqR3dINWhrSDhLckx1TlBKTUE9PQ%3D%3D--2e4832f7a7155427f3459f56562c91cbbc827522;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=a778a811-e5e5-4aae-84a5-9956ca771b31; path=/; expires=Mon, 27 Feb
+        2017 04:42:41 -0000; secure
+      - ahoy_visitor=28a8c519-ebea-4c38-a367-ea8c8255f13d; path=/; expires=Wed, 27
+        Feb 2019 00:42:41 -0000; secure
+      X-Request-Id:
+      - 5a5ea396-5073-4303-8e13-a8180974df91
+      X-Runtime:
+      - '0.129061'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":2367978,"slug":"david-lively","name":"David Lively","email":"davelively14@gmail.com","title":null,"first_name":"David","last_name":"Lively","facebook_id":null,"url":"/users/david-lively","bio":null,"course":{"id":62,"name":"Software
+        Developer Track","length":54,"kind":"software_dev_track","appointments_per_week":2},"current_enrollment":{"id":20477,"created_at":"2016-12-20T05:37:43.015-08:00","updated_at":"2017-02-26T14:34:54.005-08:00","cohort_id":null,"status":"active","mentor_id":2363254,"deleted":false,"onboarded":true,"dropped_out_at":null,"birth_date":"2016-12-20T05:37:43.013-08:00","roadmap_id":38,"course_end_date":"2018-01-21T23:00:00.000-08:00","course_start_date":"2017-01-09T00:00:00.000-08:00","death_date":null,"sent_get_started_email":false,"course_id":62,"old_visit_id":null,"certified":false,"locked_message":"","latest":true,"chain_id":5700,"roadmap_ref":"63053e55-f838-4afe-9dce-f89ac6b83378|0","visit_id":"0e84de1d-ff4f-44d4-8297-73b5d6ad8d1e"},"quota":0,"quota_limit":0,"type":"Student","status":"active","image_src":"https://cdn-photos.bloc.io/original/2367978/Headshot_-_2015_-_small.jpg?1483970542","large_image_src":"https://cdn-photos.bloc.io/large/2367978/Headshot_-_2015_-_small.jpg?1483970542","created_at":"2016-12-20
+        05:32:11 -0800","facebook_profile_picture_url":"http://graph.facebook.com//picture?width=110\u0026height=110","github_handle":"davelively14","codecademy_handle":null,"student":true,"time_zone":{"name":"Eastern
+        Time (US \u0026 Canada)","string":"(GMT-05:00) Eastern Time (US \u0026 Canada)","identifier":"America/New_York"}}'
+    http_version: 
+  recorded_at: Mon, 27 Feb 2017 00:42:41 GMT
+recorded_with: VCR 3.0.3

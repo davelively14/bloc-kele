@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions/
+    body:
+      encoding: UTF-8
+      string: email=jsmith%40fake.com&password=password
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 27 Feb 2017 00:40:17 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _BlocAlpha_session2=MU54L09kSWc2UllGTVpiSndMZUJzUkVDQ0wreW5UeHhqbks2TnRsK2xNY1E5RlMzL3ZpY1kxamJBT0dQRzV5Wnl0djJDVWtYTlUxcm8vMExyTlVrNU53SjJZL2VMcGZHbm93NkNlSzdSZjA5YzdjWXZBZThFZGluSDdYVE1yclQtLTBrZjF2eCs1WEpla1JRSk5NMEdLaXc9PQ%3D%3D--0a8061c9dca387abbd61fa824dbd7bf3b53db329;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_visit=71715cdd-6139-4775-a3ec-123712adb89e; path=/; expires=Mon, 27 Feb
+        2017 04:40:18 -0000; secure
+      - ahoy_visitor=cb3ce897-c5e9-491d-a44e-c89fd38dc4df; path=/; expires=Wed, 27
+        Feb 2019 00:40:18 -0000; secure
+      X-Request-Id:
+      - 8981e442-68dc-46cb-b7b8-2ea7c831acab
+      X-Runtime:
+      - '0.018825'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Resource not found"}'
+    http_version: 
+  recorded_at: Mon, 27 Feb 2017 00:40:18 GMT
+recorded_with: VCR 3.0.3

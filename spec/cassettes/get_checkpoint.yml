@@ -1,0 +1,116 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions/
+    body:
+      encoding: UTF-8
+      string: email=davelively14%40gmail.com&password=0LDw00d1
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 27 Feb 2017 00:45:33 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f7de6a78576d91c6dfaceb5f81723406"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=KCIBetzdiu2UejaNiUMOYy9yZQUD%2BF27851TD%2BAbOi4%3D; path=/; secure
+      - _BlocAlpha_session2=SCs1VXN1MHhGSDlvMWdmcHN3RzhSOU5TVGh4cUFOQ2xXbmZMM25zN2hBaCs4TjR2RklJQlZkYzNaN2VhcTRGa2VQZzR2blhpb2tteUxvK2JmUkN4dkl5VnpsMzBldXVnMVpaaklrMzFJNEViY1B3RldOU2tTSXRCQUREeCttMTBFN1VyNWx6OWE4RnJMbUN0d1ZCQU1JLzd5SElqOEJYTGlhV1F6UllYd0NKTUZIUHFxVzRoYm9YY21QRFNDMG90aHl5Vm1Ka3Fsc1JWTkpUcEZqUFhwdz09LS1oVWwxTFl3Vzl1dnI5S0RCdjZPeWhnPT0%3D--a9e21998e4819ccc454bee48cb11d33f7c692820;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=0f5ea5be-839f-4ff9-8572-cb52eb03e8a5; path=/; expires=Mon, 27 Feb
+        2017 04:45:33 -0000; secure
+      - ahoy_visitor=f44b7b23-cdf1-4463-b69a-994c4a9d37c9; path=/; expires=Wed, 27
+        Feb 2019 00:45:33 -0000; secure
+      X-Request-Id:
+      - 9f70dad5-9f15-4a75-bcc1-3665912ae02a
+      X-Runtime:
+      - '0.233587'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiZWU3N2I5NDVhNzdiNDBiMjk4YTY0ZDJhODhkMjVkZTUiLCJ1c2VyX2lkIjoyMzY3OTc4LCJuYW1lIjoiRGF2aWQgTGl2ZWx5In0.IrNbQlmM8HZW-8xc29xYAMqCMo62rWN2rsYoAVjsA7c","user":{"id":2367978,"email":"davelively14@gmail.com","created_at":"2016-12-20T05:32:11.739-08:00","updated_at":"2017-02-26T16:44:59.420-08:00","facebook_id":null,"first_name":"David","last_name":"Lively","role":"user","stripe_customer_id":"cus_9mMXh2CM1NGYBh","twitter_handle":"RealDaveLively","skype_handle":"davelively14","github_handle":"davelively14","time_zone":"Eastern
+        Time (US \u0026 Canada)","bio":null,"photo_file_name":"Headshot_-_2015_-_small.jpg","photo_content_type":"image/jpeg","photo_file_size":26489,"photo_updated_at":"2017-01-09T06:02:22.521-08:00","send_new_message_emails":true,"referred_by_id":null,"slug":"david-lively","os":"OS
+        X","last_seen_at":"2017-02-26T16:44:59.289-08:00","private_profile":false,"google_plus_id":null,"linkedin":"https://www.linkedin.com/in/livelydave","quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5700,"phone_num":"912-695-8927","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":null,"birthdate":"1979-09-02","gender":"Male","first_visit_id":null,"codewars_handle":"davelively14"}}'
+    http_version: 
+  recorded_at: Mon, 27 Feb 2017 00:45:33 GMT
+- request:
+    method: get
+    uri: https://www.bloc.io/api/v1/checkpoints/1606
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiZWU3N2I5NDVhNzdiNDBiMjk4YTY0ZDJhODhkMjVkZTUiLCJ1c2VyX2lkIjoyMzY3OTc4LCJuYW1lIjoiRGF2aWQgTGl2ZWx5In0.IrNbQlmM8HZW-8xc29xYAMqCMo62rWN2rsYoAVjsA7c
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 27 Feb 2017 00:45:33 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _BlocAlpha_session2=RU9wUmsrYTZYaE1KQU1lUU52RGJLdFBTaGN5SC90RTk5c0p2VkFPVDc2dU9vVXROZGxnZ0VaVTJidGRwSkhVaHhuRTl5Y3FTNTRFOEVRYkNURzFGVWpCVDJGUUNNaUdBNWwxbFhxMit4Vy9KZHhPQjRFNVNDYmYvV3ZkVVllY3pqK2NTU0tkZnFEcXhOemxUR0ZtMU0wYXJlcnBUTVhTUGhGL2FUQkhvcnFqaG1pc2Y3N1FQY21UcUVXTlRhSE9HMjVJTWJkdVNMUThaWUR6dDU2aC9YblhvZm8vRUJQSG5SNStDVElWci95Zz0tLXZsV2N4cmdZNHVhUWpoK1hGc2NXdEE9PQ%3D%3D--39c82106b927014989d4a346ade5bac689e55e50;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=53bef177-3ce3-4f90-9ec9-6e56a55369b9; path=/; expires=Mon, 27 Feb
+        2017 04:45:33 -0000; secure
+      - ahoy_visitor=98569e86-2d15-409d-8574-01c0829569f2; path=/; expires=Wed, 27
+        Feb 2019 00:45:33 -0000; secure
+      X-Request-Id:
+      - f27f4fe0-147d-4d66-b478-710c944fd673
+      X-Runtime:
+      - '0.156062'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"message":"Sorry, you are not authorized to do that."}'
+    http_version: 
+  recorded_at: Mon, 27 Feb 2017 00:45:34 GMT
+recorded_with: VCR 3.0.3

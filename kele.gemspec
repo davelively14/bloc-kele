@@ -12,5 +12,7 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
   s.add_runtime_dependency 'httparty', '~> 0.13'
   s.add_runtime_dependency 'json'
-  s.add_development_dependency "rspec"
+  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'webmock'
+  s.add_development_dependency 'vcr'
 end
