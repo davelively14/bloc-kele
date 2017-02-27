@@ -1,10 +1,12 @@
 require 'httparty'
 require 'json'
-require 'roadmap'
+require '/Users/DavesMac/Projects/bloc/bloc-kele/lib/roadmap.rb'
+require '/Users/DavesMac/Projects/bloc/bloc-kele/lib/messages.rb'
 
 class Kele
   include HTTParty
   include Roadmap
+  include Messages
 
   def initialize(email, password)
     @bloc_api_url = "https://www.bloc.io/api/v1/"
@@ -23,6 +25,7 @@ class Kele
     end
 
     @headers = {
+      # "content_type" => 'application/json',
       "authorization" => @auth_token
     }
   end

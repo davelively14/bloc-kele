@@ -103,4 +103,33 @@ RSpec.describe Kele do
       end
     end
   end
+
+  describe "get_messages" do
+    let(:get_messages_results) { good_kele_load.get_messages }
+    let(:get_messages_set_page_results) { good_kele_load.get_messages(1) }
+
+    it "returns a Ruby hash" do
+      VCR.use_cassette('get_messages_all') do
+        expect(get_messages_results).to be_a(Hash)
+      end
+    end
+
+    it "returns a list of messages" do
+      VCR.use_cassette('get_messages_all') do
+        expect(get_messages_results["items"].count).to eq(10)
+      end
+    end
+
+    it "asking for a specific page returns a Ruby hash" do
+      VCR.use_cassette('get_messages_single') do
+        expect(get_messages_set_page_results).to be_a(Hash)
+      end
+    end
+
+    it "asking for a specific page returns a list of messages" do
+      VCR.use_cassette('get_messages_single') do
+        expect(get_messages_set_page_results["items"].count).to eq(10)
+      end
+    end
+  end
 end

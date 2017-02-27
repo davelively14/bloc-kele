@@ -1,0 +1,138 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions/
+    body:
+      encoding: UTF-8
+      string: email=davelively14%40gmail.com&password=0LDw00d1
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 27 Feb 2017 01:16:32 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"1e68f800dfcffee0050bd2ff52ff339a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=plW2HxLVVi6sruBOYbDofxncB%2BBTnrKTkknnGwI8cTE%3D; path=/; secure
+      - _BlocAlpha_session2=YktYUE0xL3RpZDIwY2tvMk93azNvY2Y4SDNHVHdxVzJlYnR2bEUxS3Fpd0o0TU5WbkV6WlRwNHlVWktWQi9hQmIvdXp0Ym5EODdzb0EwWlJrYWd6d1R5UXlJNkRaTjBVUHh4NlRYdTVkSVBVVWpyZVp3TEhWc0JncVpsNHQzUjh1NEMzWm16a3ZnbndNdCtDcENrTDdPdGJ2VlVEZFVsQnI2eDM1dXR1NzEzK0Ywa0c4NklrZTB6a25ad1VqLzdLNEIwbkk2clJLUndRbzJTa3RDQllDQT09LS0rQnMvNDR3RnZ2M3YxY09SdFhCbW53PT0%3D--7e4fe511da68cfee3c3d7b0a0e60a2ea00b75875;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=62b2bb92-db41-4d8b-af89-01c39b110279; path=/; expires=Mon, 27 Feb
+        2017 05:16:33 -0000; secure
+      - ahoy_visitor=52d4b0c6-980a-45c3-b683-372f573ce77a; path=/; expires=Wed, 27
+        Feb 2019 01:16:33 -0000; secure
+      X-Request-Id:
+      - fd3c47ee-f644-42ce-85e8-6b6499194e3e
+      X-Runtime:
+      - '0.106757'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiZWU3N2I5NDVhNzdiNDBiMjk4YTY0ZDJhODhkMjVkZTUiLCJ1c2VyX2lkIjoyMzY3OTc4LCJuYW1lIjoiRGF2aWQgTGl2ZWx5In0.IrNbQlmM8HZW-8xc29xYAMqCMo62rWN2rsYoAVjsA7c","user":{"id":2367978,"email":"davelively14@gmail.com","created_at":"2016-12-20T13:32:11.739Z","updated_at":"2017-02-27T01:15:19.640Z","facebook_id":null,"first_name":"David","last_name":"Lively","role":"user","stripe_customer_id":"cus_9mMXh2CM1NGYBh","twitter_handle":"RealDaveLively","skype_handle":"davelively14","github_handle":"davelively14","time_zone":"Eastern
+        Time (US \u0026 Canada)","bio":null,"photo_file_name":"Headshot_-_2015_-_small.jpg","photo_content_type":"image/jpeg","photo_file_size":26489,"photo_updated_at":"2017-01-09T14:02:22.521Z","send_new_message_emails":true,"referred_by_id":null,"slug":"david-lively","os":"OS
+        X","last_seen_at":"2017-02-27T01:15:19.571Z","private_profile":false,"google_plus_id":null,"linkedin":"https://www.linkedin.com/in/livelydave","quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5700,"phone_num":"912-695-8927","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":null,"birthdate":"1979-09-02","gender":"Male","first_visit_id":null,"codewars_handle":"davelively14"}}'
+    http_version: 
+  recorded_at: Mon, 27 Feb 2017 01:16:33 GMT
+- request:
+    method: get
+    uri: https://www.bloc.io/api/v1/message_threads
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiZWU3N2I5NDVhNzdiNDBiMjk4YTY0ZDJhODhkMjVkZTUiLCJ1c2VyX2lkIjoyMzY3OTc4LCJuYW1lIjoiRGF2aWQgTGl2ZWx5In0.IrNbQlmM8HZW-8xc29xYAMqCMo62rWN2rsYoAVjsA7c
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 27 Feb 2017 01:16:33 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"7b6989bfffec0305aaff32843be1df46"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=Hh3jJzd%2BlWX4V3lox1doIBZ6tkJGE8RhJtaxwlnOEdg%3D; path=/; secure
+      - _BlocAlpha_session2=MHpDaHgvK1RjUmlIak1vZm9SbjBRMzVBWE8wRGsrVEpKbTRrWmw3MmhPNE1paE04c0JDVTk0WGd3dWNIL2x0UldvN1FBbDk0M2gyOTRnaHcrbmtyVWtDRllrak1FUzJIR2JHMmtwQlJvMXVZMUhlVGlEVDdKVHRiNUZiNzZMNlQ5NWcyTlR6M0JjdGgvK3A2RW1ldUdtOUNScDlQaEtGZFpTN1htRTBMdXlnRlRSL3NQVEJ6UnpaMkNYYzdIZW1kUHdHUjd1TmJKVlZaUXdKNVBtck1jMzY4blFOcW5zR1FRQXpGbGZiR05VaTNuK2Q4RmR4TE5sQ3FLS3dva2FrNXF2TkVWUkN4dldhRnhic3dkYmlqNTRjNjFMbmpoV0pPQldmV0d3bnQzMmt6dlFQaWRxUUdZWXpVQjhSTm5MdXEtLWFMRG5qdGMvMWt2Mm80cjhpeUpnYUE9PQ%3D%3D--db9edaab8c9be0a2f58aaa4413dbeec03d2dfa54;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=eff6a7a2-637c-47ce-85dd-ea2e9d3b16dd; path=/; expires=Mon, 27 Feb
+        2017 05:16:33 -0000; secure
+      - ahoy_visitor=54cfe6fe-7998-418c-9a4a-84a7892fcb23; path=/; expires=Wed, 27
+        Feb 2019 01:16:33 -0000; secure
+      X-Request-Id:
+      - e2ea84ab-6361-4ad4-868b-2cd70d2a9801
+      X-Runtime:
+      - '0.609157'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"id":271272,"token":"bc8f7aff-0693-452c-b31d-ab07006675e9","subject":"Continuing
+        Discussion from CP 30","updated_at":"2017-02-20T14:48:15.578Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/2363254/Headshot_close.jpg?1479266846","preview":"Yeah,
+        I totally see what you are getting at. Th...","first_name":"Ryan","last_name":"Milstead","page":null},{"id":267707,"token":"c241a66b-cadc-4d18-9f13-627d78750a1d","subject":"Checkpoint
+        9","updated_at":"2017-02-08T20:38:34.226Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/2363254/Headshot_close.jpg?1479266846","preview":"Ok,
+        cool. Gotcha. Thanks!","first_name":"Ryan","last_name":"Milstead","page":null},{"id":265626,"token":"5636f90d-06e8-4840-af15-5d339d7357e5","subject":"Software
+        Backend Programming Fundamentals 3 - Quiz: Ruby Programming Fundamentals discussion","updated_at":"2017-02-06T15:02:15.587Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/2363254/Headshot_close.jpg?1479266846","preview":"Amazing!","first_name":"Ryan","last_name":"Milstead","page":null},{"id":259942,"token":"2a3cdaa9-35b7-4435-b565-98ef15fcdd12","subject":"Software
+        Foundation: Frontend Web Development 19 - jQuery: Next and Previous Buttons
+        discussion","updated_at":"2017-01-19T17:04:34.171Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/2363254/Headshot_close.jpg?1479266846","preview":"No
+        worries. The format of most of these checkpo...","first_name":"Ryan","last_name":"Milstead","page":null},{"id":259203,"token":"86eab661-00eb-4ea1-a942-ff21f028f856","subject":"Software
+        Foundation: Frontend Web Development 11 - DOM Scripting: Album View discussion","updated_at":"2017-01-17T00:30:07.814Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/2363254/Headshot_close.jpg?1479266846","preview":"You
+        are actually on point there. They probably ...","first_name":"Ryan","last_name":"Milstead","page":null},{"id":258809,"token":"42dc25e2-5238-4f27-bb7d-2bb04e0f9f7f","subject":"Assignment
+        4","updated_at":"2017-01-16T02:21:36.613Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/2363254/Headshot_close.jpg?1479266846","preview":"Nice
+        work!","first_name":"Ryan","last_name":"Milstead","page":null},{"id":258650,"token":"183272eb-213f-4107-9a19-0eac852a75a1","subject":"Assignment:
+        Checkpoint 3","updated_at":"2017-01-13T18:47:56.795Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/2363254/Headshot_close.jpg?1479266846","preview":"Very
+        nice explanations of absolute/relative pos...","first_name":"Ryan","last_name":"Milstead","page":null},{"id":258047,"token":"99947fd8-b763-41ae-af0f-779d1c682c00","subject":"Module
+        2","updated_at":"2017-01-13T18:12:00.040Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/2363254/Headshot_close.jpg?1479266846","preview":"Thanks!
+        Will do.","first_name":"Ryan","last_name":"Milstead","page":null},{"id":257593,"token":"0186e4ea-c514-49c4-ae30-8b34bb97e49c","subject":"Web
+        Frontend Programming Fundamentals 8 - Advanced JavaScript discussion","updated_at":"2017-01-11T21:24:05.957Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/2363254/Headshot_close.jpg?1479266846","preview":"Good
+        to hear. Thanks!","first_name":"Ryan","last_name":"Milstead","page":null},{"id":256994,"token":"58f173e2-3c2d-47ad-9f5b-a75df0842568","subject":"Introduction","updated_at":"2017-01-09T15:04:27.397Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/2363254/Headshot_close.jpg?1479266846","preview":"#
+        Hello, Ryan\r\n\r\nI''ve been chomping at the bit ...","first_name":"Ryan","last_name":"Milstead","page":null}],"count":10}'
+    http_version: 
+  recorded_at: Mon, 27 Feb 2017 01:16:34 GMT
+recorded_with: VCR 3.0.3
