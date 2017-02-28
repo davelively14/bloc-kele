@@ -9,19 +9,9 @@ module Messages
     end
   end
 
-  def create_message(sender, recipient_id, stripped_text, subject=nil, token=nil)
-    options = {
-      body: {
-        "sender" => sender,
-        "recipient_id" => recipient_id,
-        "subject" => subject,
-        "token" => token,
-        "stripped-text" => stripped_text
-      },
-      headers: @headers
-    }
-
-    response = self.class.post("#{@bloc_api_url}messages/", options)
+  def create_message(attrs)
+    confirm_attrs(["sender", "recipient_id", "stripped_text"], attrs)
+    response = self.class.post("#{@bloc_api_url}messages/", {body: attrs, headers: @headers})
     JSON.parse(response.body) ? JSON.parse(response.body) : nil
   end
 end

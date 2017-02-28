@@ -1,5 +1,6 @@
 require 'httparty'
 require 'json'
+# TODO reduce to the project path. Using full path because my IRB apparently resides in the bin.
 require '/Users/DavesMac/Projects/bloc/bloc-kele/lib/roadmap.rb'
 require '/Users/DavesMac/Projects/bloc/bloc-kele/lib/messages.rb'
 
@@ -43,5 +44,23 @@ class Kele
     mentor_id = get_me["current_enrollment"]["mentor_id"]
     response = self.class.get("#{@bloc_api_url}mentors/#{mentor_id}/student_availability/", headers: @headers)
     JSON.parse(response.body)
+  end
+
+  # attrs is a hash of attributes
+  def create_submission(attrs)
+    confirm_attrs(["checkpoint_id", "enrollment_id"], attrs)
+    puts "#{{body: attrs, headers: @headers}}"
+    response = self.class.post("#{@bloc_api_url}checkpoint_submissions/", {body: attrs, headers: @headers})
+    puts response
+  end
+
+  private
+
+  # Receives Array of required keys and a Hash of attributes
+  def confirm_attrs(required, attrs)
+    raise "The pramater you passed needs be a Hash of attributes. You passed a #{attrs.class}." unless attrs.is_a? Hash
+    required.each do |req|
+      raise "#{req} key required" unless attrs[req]
+    end
   end
 end
