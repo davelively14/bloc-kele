@@ -46,12 +46,10 @@ class Kele
     JSON.parse(response.body)
   end
 
-  # attrs is a hash of attributes
-  def create_submission(attrs)
-    confirm_attrs(["checkpoint_id", "enrollment_id"], attrs)
-    puts "#{{body: attrs, headers: @headers}}"
-    response = self.class.post("#{@bloc_api_url}checkpoint_submissions/", {body: attrs, headers: @headers})
-    puts response
+  def create_submission(*attrs)
+    body = attrs.first
+    confirm_attrs(["checkpoint_id", "enrollment_id"], body)
+    self.class.post("#{@bloc_api_url}checkpoint_submissions/", {body: body, headers: @headers})
   end
 
   private
@@ -60,7 +58,7 @@ class Kele
   def confirm_attrs(required, attrs)
     raise "The pramater you passed needs be a Hash of attributes. You passed a #{attrs.class}." unless attrs.is_a? Hash
     required.each do |req|
-      raise "#{req} key required" unless attrs[req]
+      raise "#{req} key required, of type #{req.class}" unless attrs[req]
     end
   end
 end
