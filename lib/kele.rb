@@ -1,8 +1,7 @@
 require 'httparty'
 require 'json'
-# TODO reduce to the project path. Using full path because my IRB apparently resides in the bin.
-require '/Users/DavesMac/Projects/bloc/bloc-kele/lib/roadmap.rb'
-require '/Users/DavesMac/Projects/bloc/bloc-kele/lib/messages.rb'
+require 'roadmap'
+require 'messages'
 
 class Kele
   include HTTParty
